@@ -1,15 +1,15 @@
 {
-  "name": "books-api",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "homepage":"https://Mahmoud-Elhamrawi.github.io/Api-BookStore",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "json-server -p 3009 -w data.json"
+  
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build"
+  
   },
-  "author": "",
-  "license": "ISC",
+
   "dependencies": {
-    "json-server": "^0.17.0"
+    "gh-pages": "^4.0.0",
+    "json-server": "^0.17.0",
+    "save-dev": "^0.0.1-security"
   }
 }
